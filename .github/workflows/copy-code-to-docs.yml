@@ -17,6 +17,7 @@ jobs:
         run: cp -r ./src/stable_matrix_completion.ipynb ./docs/stable_matrix_completion.ipynb
       - name: Commit files
         run: |
+          git add .
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git commit -m "Copy notebooks from ./src to ./docs" -a
