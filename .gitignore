@@ -2,3 +2,4 @@
 
 data/frames/*
 src/.ipynb_checkpoints/*
+docs/notebooks/.ipynb_checkpoints/*
