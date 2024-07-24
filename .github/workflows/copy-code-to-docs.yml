@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Copy Code to Docs 
+      - name: Copy code from ./src to ./docs
         run: cp -r ./src/*.ipynb ./docs
       - name: Commit files
         run: |
