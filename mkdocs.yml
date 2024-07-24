@@ -1,4 +1,4 @@
-site_name: A Proximal Projection Method for Stable Linearly Constrained Optimization
+site_name: Proximal Projection for Stable Linearly Constrained Optimization
 site_description: Documentation for code used in the paper for the Proximal Projection (PP) algorithm.
 
 extra_css:
