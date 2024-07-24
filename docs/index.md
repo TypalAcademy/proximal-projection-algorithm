@@ -30,11 +30,9 @@ _Proximal Projection Method for Stable Linearly Constrained Optimization_
 
 <center>
   
-  [arXiv Link](https://github.com/TypalAcademy/proximal-projection-algorithm){ .md-button  }
+  [arXiv Prerint :simple-arxiv:](https://github.com/TypalAcademy/proximal-projection-algorithm){ .md-button  }
 
-  [Github Repo](https://github.com/TypalAcademy/proximal-projection-algorithm){ .md-button  }
-  
-  <br>
+  [Github Repo :simple-github:](https://github.com/TypalAcademy/proximal-projection-algorithm){ .md-button  }
     
   [Contact Us :material-chat-processing:](https://form.jotform.com/TypalAcademy/contact-form){ .md-button }
    
