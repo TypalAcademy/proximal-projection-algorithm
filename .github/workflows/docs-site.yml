@@ -1,4 +1,4 @@
-name: docs website
+name: docs-site
 on:
   push:
     branches:
