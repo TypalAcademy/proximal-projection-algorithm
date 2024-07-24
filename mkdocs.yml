@@ -73,7 +73,7 @@ extra_javascript:
 
 nav:
     - 'Home': index.md
-    - 'Basis Pursuit': /../src/basis_pursuit.ipynb
+    - 'Basis Pursuit': basis_pursuit.ipynb
 
 
 copyright: |
