@@ -21,6 +21,9 @@ description: Documentation for code used in the paper for the Proximal Projectio
 
   We love hearing from you; please reach out!
 
+
+  {include} ../src/basis_pursuit.ipynb 
+
 </center>
 
 <br>
