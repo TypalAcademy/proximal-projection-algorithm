@@ -1,0 +1,17 @@
+name: code -> docs
+
+on:
+  push:
+    branches:
+      - master 
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Copy Code to Docs 
+        run: cp -r ./src/*.ipynb ./docs
