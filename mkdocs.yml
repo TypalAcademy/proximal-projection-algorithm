@@ -5,9 +5,7 @@ extra_css:
   - stylesheets/extra.css
  
 plugins:
-  - mkdocstrings
-  - tags:
-      tags_file: tags.md  
+  - mkdocstrings 
   - mkdocs-jupyter:
       include_source: True
       include: ["*.ipynb"]
@@ -69,10 +67,7 @@ extra_javascript:
 
 nav:
     - 'Home': index.md
-    - 'Basis Pursuit':  ../src/basis_pursuit.ipynb 
-    - 'Earth Movers Distance': ../src/earth_movers_distance.ipynb 
-    - 'Stable Principal Component Pursuit':  ../src/stable_principal_component_pursuit.ipynb 
-    - 'Stable Matrix Completion':  ../src/stable_matrix_completion.ipynb
+
 
 copyright: |
   &copy; 2024 <a href="https://typal.academy"  target="_blank" rel="noopener">Typal Academy.</a> 
