@@ -20,12 +20,19 @@ theme:
   palette:
     scheme: default  
   language: en
-  features:
-    - navigation.tabs 
+  features: 
+    - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.indexes   
-    - navigation.footer     
-    - header.autohide
+    - navigation.tracking
+    - toc.integrate
+    - navigation.top
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy      
+    - navigation.footer  
 
 # Github Repo
 repo_name: typalacademy/proximal-projection-algorithm
