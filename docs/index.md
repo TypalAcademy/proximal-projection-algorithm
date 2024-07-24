@@ -11,7 +11,8 @@ description: Documentation for code used in the paper for the Proximal Projectio
 
 <center>
 
-  --8<-- "README.md"
+  This website provides documentation for code used in the paper for the Proximal Projection (PP) algorithm.
+  Docs will be expanded soon.
   
   [Github Repo](https://github.com/TypalAcademy/proximal-projection-algorithm){ .md-button  }
   
@@ -22,9 +23,7 @@ description: Documentation for code used in the paper for the Proximal Projectio
   We love hearing from you; please reach out!
 
 
-  ::: src.basis_pursuit.shrink
-      options:
-        show_root_heading: false
+   
 </center>
 
 <br>
