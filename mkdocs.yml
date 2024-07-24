@@ -69,10 +69,10 @@ extra_javascript:
 
 nav:
     - 'Home': index.md
-    - 'Basis Pursuit':  ../src/basis-pursuit.ipynb 
-    - 'Earth Movers Distance': ../src/earth-movers-distance.ipynb 
-    - 'Stable Principal Component Pursuit':  ../src/stable-principal-component-pursuit.ipynb 
-    - 'Stable Matrix Completion':  ../src/stable-matrix-completion.ipynb
+    - 'Basis Pursuit':  ../src/basis_pursuit.ipynb 
+    - 'Earth Movers Distance': ../src/earth_movers_distance.ipynb 
+    - 'Stable Principal Component Pursuit':  ../src/stable_principal_component_pursuit.ipynb 
+    - 'Stable Matrix Completion':  ../src/stable_matrix_completion.ipynb
 
 copyright: |
   &copy; 2024 <a href="https://typal.academy"  target="_blank" rel="noopener">Typal Academy.</a> 
