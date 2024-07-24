@@ -46,8 +46,6 @@ extra:
       link: https://youtube.com/@TypalAcademy         
 
 markdown_extensions:
-    - markdown_include.include:
-        base_path: src
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
