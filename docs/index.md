@@ -10,6 +10,8 @@ description: Documentation for code used in the paper for the Proximal Projectio
 # Proximal Projection Algorithm
 
 <center>
+
+  --8<-- "README.md"
   
   [Github Repo](https://github.com/TypalAcademy/proximal-projection-algorithm){ .md-button  }
   
