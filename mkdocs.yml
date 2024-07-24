@@ -35,7 +35,7 @@ theme:
     - navigation.footer  
 
 # Github Repo
-repo_name: typalacademy/proximal-projection-algorithm
+repo_name: proximal-projection-algorithm
 repo_url: https://github.com/typalacademy/proximal-projection-algorithm
 
 extra:
