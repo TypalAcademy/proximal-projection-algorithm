@@ -22,7 +22,7 @@ description: Documentation for code used in the paper for the Proximal Projectio
   We love hearing from you; please reach out!
 
 
-  ::: src.basis_pursuit
+  ::: src.basis_pursuit.shrink
       options:
         show_root_heading: false
 </center>
