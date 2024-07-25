@@ -14,7 +14,7 @@ Many applications using large datasets require efficient methods for minimizing 
 
 ## Publication
 
-_Proximal Projection Method for Stable Linearly Constrained Optimization_
+_Proximal Projection Method for Stable Linearly Constrained Optimization_ [arXiv Link](https://arxiv.org/abs/2407.16998)
     
     @article{heaton2024proximal,
              title={{Proximal Projection Method for Stable Linearly Constrained Optimization}},
