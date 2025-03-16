@@ -18,9 +18,10 @@ This website provides documentation for code used in the paper for the Proximal 
 ## Key Result
 
 __Problem__: For a convex function $f\colon\mathbb{R}^n \rightarrow \overline{\mathbb{R}}$, a matrix $A \in \mathbb{R}^{m\times n}$, a vector $b\in \mathbb{R}^m$, and a scalar $\varepsilon \geq 0$, we conside the _stable linearly constrained optimization problem_:
-    $$
-    \underset{x}{\mbox{min}} f(x) \quad\mbox{s.t.}\quad \|Ax-b\|\leq \varepsilon.
-    $$
+
+$$
+\underset{x}{\text{min}} f(x) \quad\text{s.t.}\quad \|Ax-b\|\leq \varepsilon.
+$$
 
 __Theorem__: If the following conditions hold:
 
@@ -30,7 +31,7 @@ __Theorem__: If the following conditions hold:
   - [x] the above condition holds for $y \in \mbox{ri}(\mbox{dom}(f))$.    
   - [x] either $f$ is coercive or $\{x : \|Ax-b\|\leq \varepsilon\}$ is bounded; 
 
-then Algorithm 2 converges to a solution of the stable linearly constrained optimization problem.
+then the proximal projection algorithm converges to a solution of the stable linearly constrained optimization problem.
 
 ## Publication Reference
 
