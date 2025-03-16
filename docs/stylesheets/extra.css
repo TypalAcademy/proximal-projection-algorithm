@@ -71,8 +71,7 @@ input {
               background-color:   #ffffff;
               -webkit-appearance: none;
               margin-right: 20px; 
-              margin-left: 20px;
-            }              
+              margin-left: 20px;            
              }
   .button {border-color:       #ffbc50;
            color:               var(--md-primary-fg-color);
