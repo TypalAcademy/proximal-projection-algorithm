@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  lint:
+  Lint:
     runs-on: ubuntu-latest
 
     steps:
@@ -41,4 +41,4 @@ jobs:
     # Run Flake8 to check code style
     - name: Run Flake8
       run: |
-        poetry run flake8 ./src/  # Lint the code
+        poetry run flake8 ./src/  --verbose # Lint the code
