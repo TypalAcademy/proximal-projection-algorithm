@@ -26,6 +26,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install poetry
         poetry install
+        pip install "black[jupyter]"`
 
     # Run Black to check code formatting
     - name: Run Black
