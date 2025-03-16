@@ -27,4 +27,5 @@ ignore_missing_imports = true
 black = "^23.1.0"
 flake8 = "^4.0.0"
 mypy = "^1.4.0"
+python = ">=3.6"
 
