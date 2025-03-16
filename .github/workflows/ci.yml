@@ -1,26 +1,46 @@
-name: docs site
+name: Python CI
+
 on:
-  workflow_run:
-    workflows: ["copy notebooks to docs"]
-    types:
-      - completed
-      
-permissions:
-  contents: write
-jobs: 
-  deploy:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: 3.x
-      - uses: actions/cache@v4
-        with:
-          key: ${{ github.ref }}
-          path: .cache
-      - run: pip install pillow cairosvg             
-      - run: pip install mkdocs-material 
-      - run: pip install 'mkdocstrings[crystal,python]'   
-      - run: pip install mkdocs-jupyter
-      - run: mkdocs gh-deploy --force
+    # Checkout the code from the repository
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    # Set up Python environment
+    - name: Set up Python 3.13
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.13'
+
+    # Install dependencies with Poetry
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install poetry
+        poetry install --no-dev  # Install production dependencies
+
+    # Run Black to check code formatting
+    - name: Run Black
+      run: |
+        poetry run black --check .  # Check for formatting issues
+
+    # Run MyPy to check types
+    - name: Run MyPy
+      run: |
+        poetry run mypy .  # Check type annotations
+
+    # Run Flake8 to check code style
+    - name: Run Flake8
+      run: |
+        poetry run flake8 .  # Lint the code
