@@ -38,16 +38,24 @@ The key conditions used in this work are as follows.
 __Proposition__: If the conditions above hold, then projection onto $\mathcal{C}$ is given by
 
 $$
-\mathsf{\sP_{\mathcal{C}}(x)}
+\mathsf{proj_{\mathcal{C}}(x)}
+= \begin{cases}
+    \begin{array}{cl}
+        \mathsf{x} & \mathsf{if\ \|Ax-b\|\leq\varepsilon,} \\
+        \mathsf{x - A^\top(AA^\top +\varepsilon\tau_x I)^{-1}(Ax-b)} & \mathsf{otherwise},
+    \end{array}
+\end{cases}
 $$
 
 where, if $\mathsf{\|Ax-b\|>\varepsilon}$, the scalar $\mathsf{\tau_x}$ is the unique positive solution to 
 
 $$
-  \mathsf{1 = \tau \| (AA^\top +\varepsilon \tau \II)^{-1} (Ax-b) \|.}
+  \mathsf{1 = \tau \| (AA^\top +\varepsilon \tau I)^{-1} (Ax-b) \|.}
 $$
 
 We can use the above projection formula with Douglas-Rachford Splitting (DRS) to obtain the PP algorithm.
+
+![PP Algorithm](assets/pp-algorithm.png)
 
 __Theorem__: If the listed conditions hold, then PP converges to a solution of the stable linearly constrained optimization problem.
 
