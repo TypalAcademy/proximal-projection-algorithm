@@ -24,20 +24,21 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        pip install "black[jupyter]"
         pip install poetry
         poetry install
-
+        
     # Run Black to check code formatting
     - name: Run Black
       run: |
-        poetry run black --check .  # Check for formatting issues
+        poetry run black --check ./src/  # Check for formatting issues
 
     # Run MyPy to check types
     - name: Run MyPy
       run: |
-        poetry run mypy .  # Check type annotations
+        poetry run mypy ./src/  # Check type annotations
 
     # Run Flake8 to check code style
     - name: Run Flake8
       run: |
-        poetry run flake8 .  # Lint the code
+        poetry run flake8 ./src/  # Lint the code
