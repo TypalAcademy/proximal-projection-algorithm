@@ -53,6 +53,7 @@ extra:
       link: https://youtube.com/@TypalAcademy         
 
 markdown_extensions:
+  - math
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
