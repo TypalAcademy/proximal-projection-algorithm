@@ -7,7 +7,7 @@ def shrink(xi, alpha):
 
 
 def update_stats(x, x_p, A, b, viol, obj, res, k):
-    """Update arrays that store performance statistics."""
+    """Update arrays storing performance statistics."""
     viol[k] = np.linalg.norm(A @ x - b)
     obj[k] = np.linalg.norm(x, ord=1)
     res[k] = np.linalg.norm(x - x_p)
