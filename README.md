@@ -2,7 +2,8 @@
 Numerical examples for the paper "Proximal Projection Method for Stable Linearly Constrained Optimization".
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
-![Docs](https://github.com/typalacademy/proximal-projection-algorithm/actions/workflows/ci.yml/badge.svg)
+![Python Linting Badge](https://github.com/typalacademy/proximal-projection-algorithm/actions/workflows/ci.yml/badge.svg)
+![Documentation Badge](https://github.com/typalacademy/proximal-projection-algorithm/actions/workflows/docs.yml/badge.svg)
 
 # Proximal Projection Algorithm
 
