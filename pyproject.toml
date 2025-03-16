@@ -5,12 +5,10 @@ description = "Numerical examples using proximal projection algorithm"
 authors = ["Howard Heaton <research@typal.academy>"]
 package-mode = false  
 
-
 [tool.poetry.dependencies]
 python = ">=3.12"
 pydantic = "^2.10.6"
 numpy = "^2.2.4"
-
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.1.0"
@@ -18,11 +16,12 @@ flake8 = "^7.1.2"
 mypy = "^1.4.0"
 pylint = "^3.3.5"
 
-
 [tool.black]
 line-length = 100
 target-version = ['py312']
 
+[tool.pylint."MESSAGES CONTROL"]
+disable = ["invalid-name"]
 
 [tool.mypy]
 files = ["src/"]
