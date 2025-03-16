@@ -1,0 +1,46 @@
+name: Python CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout the code from the repository
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    # Set up Python environment
+    - name: Set up Python 3.13
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.13'
+
+    # Install dependencies with Poetry
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install poetry
+        poetry install --no-dev  # Install production dependencies
+
+    # Run Black to check code formatting
+    - name: Run Black
+      run: |
+        poetry run black --check .  # Check for formatting issues
+
+    # Run MyPy to check types
+    - name: Run MyPy
+      run: |
+        poetry run mypy .  # Check type annotations
+
+    # Run Flake8 to check code style
+    - name: Run Flake8
+      run: |
+        poetry run flake8 .  # Lint the code
