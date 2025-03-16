@@ -1,4 +1,4 @@
-name: Documentation Site
+name: Docs Website
 on:
   workflow_run:
     workflows: ["copy notebooks to docs"]
