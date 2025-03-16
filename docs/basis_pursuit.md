@@ -15,6 +15,8 @@ $$
     \mathsf{ \underset{x}{min} \ \|x\|_1 \quad s.t. \quad Ax=b. }
 $$
 
-![](notebooks/basis_pursuit.ipynb)
+::: src.basis_pursuit.utils.proximal_projection
+    options:
+      show_root_heading: false
 
 Did this work?
