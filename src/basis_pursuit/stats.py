@@ -15,7 +15,7 @@ class Stats(BaseModel):
     obj: List[float] = Field(default_factory=list)
     res: List[float] = Field(default_factory=list)
 
-    def add_stat(self, x, x_p):
+    def add_stat(self, x, x_p) -> None:
         """Update arrays storing performance statistics."""
         viol = float(np.linalg.norm(self.matrix @ x - self.measurements))
         if not self.viol:

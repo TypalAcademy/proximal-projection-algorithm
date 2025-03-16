@@ -20,12 +20,8 @@ pylint = "^3.3.5"
 
 
 [tool.black]
-line-length = 88
+line-length = 100
 target-version = ['py312']
-
-
-[tool.flake8]
-max-line-length = 88
 
 
 [tool.mypy]
