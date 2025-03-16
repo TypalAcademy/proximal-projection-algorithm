@@ -22,14 +22,14 @@ __Problem__: For a convex function $f\colon\mathbb{R}^n \rightarrow \overline{\m
     \underset{x}{\mbox{min}} f(x) \quad\mbox{s.t.}\quad \|Ax-b\|\leq \varepsilon.
     $$
 
-
 __Theorem__: If the following conditions hold:
 
   - [x] the function $f\colon\mathbb{R}^n\rightarrow \overline{\mathbb{R}}$ is closed, convex, and proper;
   - [x] either the matrix $A$ has full row-rank or $\varepsilon > 0$;
   - [x] there is $y \in \mathbb{R}^n$ such that, if $\varepsilon = 0$, then $Ay = b$ and, if $\varepsilon > 0$, then  $\|Ay-b\| < \varepsilon$; 
   - [x] the above condition holds for $y \in \mbox{ri}(\mbox{dom}(f))$.    
-  - [x] either $f$ is coercive or $\mathcal{C}$ is bounded; 
+  - [x] either $f$ is coercive or $\{x : \|Ax-b\|\leq \varepsilon\}$ is bounded; 
+
 then Algorithm 2 converges to a solution of the stable linearly constrained optimization problem.
 
 ## Publication Reference
