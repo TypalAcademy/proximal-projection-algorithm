@@ -28,10 +28,10 @@ $$
 We refer to this as a _stable linearly constrained optimization problem_ and below set $\mathsf{\mathcal{C} = \{ x : \|Ax-b\|\leq\varepsilon\}}$.
 The key conditions used in this work are as follows.
 
-  - [x] the function $f\colon\mathbb{R}^n\rightarrow \overline{\mathbb{R}}$ is closed, convex, and proper;
-  - [x] either the matrix $A$ has full row-rank or $\varepsilon > 0$;
-  - [x] there is $y \in \mathbb{R}^n$ such that, if $\varepsilon = 0$, then $Ay = b$ and, if $\varepsilon > 0$, then  $\|Ay-b\| < \varepsilon$; 
-  - [x] the above condition holds for $y \in \mbox{ri}(\mbox{dom}(f))$.    
+  - [x] the function $\mathsf{f\colon\mathbb{R}^n\rightarrow \overline{\mathbb{R}}}$ is closed, convex, and proper;
+  - [x] either the matrix $\mathsf{A}$ has full row-rank or $\mathsf{\varepsilon > 0}$;
+  - [x] there is $\mathsf{y \in \mathbb{R}^n}$ such that, if $\mathsf{\varepsilon = 0}$, then $\mathsf{Ay = b}$ and, if $\mathsf{\varepsilon > 0}$, then  $\mathsf{\|Ay-b\| < \varepsilon}$; 
+  - [x] the above condition holds for $\mathsf{y \in \mbox{ri}(\mbox{dom}(f))}$.    
   - [x] either $f$ is coercive or $\mathcal{C}$ is bounded; 
 
 
@@ -56,7 +56,7 @@ $$
 We can use the above projection formula with Douglas-Rachford Splitting (DRS) to obtain the PP algorithm.
 
 <center>
-    <img src="assets/pp-algorithm.png" alt="Proximal Projection Algorithm" width="400" />
+    <img src="assets/pp-algorithm.png" alt="Proximal Projection Algorithm" width="600" />
 </center>
 
 __Theorem__: If the listed conditions hold, then PP converges to a solution of the stable linearly constrained optimization problem.
