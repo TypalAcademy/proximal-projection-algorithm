@@ -15,7 +15,7 @@ This website provides documentation for code used in the paper for the Proximal 
   
     Many applications using large datasets require efficient methods for minimizing a proximable convex function subject to satisfying a set of linear constraints within a specified tolerance. For this task, we present a proximal projection (PP) algorithm, which is an instance of Douglas-Rachford splitting that directly uses projections onto the set of constraints. Formal guarantees are presented to prove convergence of PP estimates to optimizers. Unlike many methods that obtain feasibility asymptotically, each PP iterate is feasible. Numerically, we show PP either matches or outperforms alternatives (e.g. linearized Bregman, primal dual hybrid gradient, proximal augmented Lagrangian, proximal gradient) on problems in basis pursuit, stable matrix completion, stable principal component pursuit, and the computation of earth mover's distances.
 
-## Key Result
+## Key Results
 
 __Problem__: For a convex function $\mathsf{f\colon\mathbb{R}^n \rightarrow \overline{\mathbb{R}}}$, a matrix $\mathsf{A \in \mathbb{R}^{m\times n}}$, a vector $\mathsf{b\in \mathbb{R}^m}$, and a scalar $\mathsf{\varepsilon \geq 0}$, we consider the problem
 
@@ -38,12 +38,6 @@ The key conditions used in this work are as follows.
 __Proposition__: If the conditions above hold, then projection onto $\mathcal{C}$ is given by
 $$
 \mathsf{\sP_{\mathcal{C}}(x)}
-= \begin{cases}
-    \begin{array}{cl}
-        \mathsf{x} & \mathsf{if\ \|Ax-b\|\leq\varepsilon,} \\
-        \mathsf{x - A^\top(AA^\top +\varepsilon\tau_x \II)^{-1}(Ax-b)} & \mathsf{otherwise},
-    \end{array}
-\end{cases}
 $$
 where, if $\mathsf{\|Ax-b\|>\varepsilon}$, the scalar $\mathsf{\tau_x}$ is the unique positive solution to 
 $$
