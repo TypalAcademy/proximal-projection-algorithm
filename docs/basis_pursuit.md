@@ -22,6 +22,9 @@ $$
 $$
   \begin{align}
     & \mathsf{while stopping criteria not met} \\
-    & \hspace*{5pt} x \leftarrow x + 1
+    & \quad  \mathsf{if \ \|Az-b\|\leq \varepsilon} \\
+    & \quad\quad \mathsf{x \leftarrow z} \\
+    & \quad \mathsf{else} \\
+    & \quad\quad \mathsf{\tau \leftarrow solution}
   \end{align}
 $$
