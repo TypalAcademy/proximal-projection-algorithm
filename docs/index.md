@@ -36,10 +36,13 @@ The key conditions used in this work are as follows.
 
 
 __Proposition__: If the conditions above hold, then projection onto $\mathcal{C}$ is given by
+
 $$
 \mathsf{\sP_{\mathcal{C}}(x)}
 $$
+
 where, if $\mathsf{\|Ax-b\|>\varepsilon}$, the scalar $\mathsf{\tau_x}$ is the unique positive solution to 
+
 $$
   \mathsf{1 = \tau \| (AA^\top +\varepsilon \tau \II)^{-1} (Ax-b) \|.}
 $$
