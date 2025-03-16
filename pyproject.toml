@@ -5,7 +5,7 @@ description = "Numerical examples using proximal projection algorithm"
 authors = ["Howard Heaton <research@typal.academy>"]
 
 [tool.poetry.dependencies]
-python = ">=3.6"
+python = ">=3.13"
 
 
 [tool.poetry.group.dev.dependencies]
