@@ -4,6 +4,15 @@ version = "0.1.0"
 description = "Numerical examples using proximal projection algorithm"
 authors = ["Howard Heaton <research@typal.academy>"]
 
+[tool.poetry.dependencies]
+python = ">=3.6"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+flake8 = "^4.0.0"
+mypy = "^1.4.0"
+
 
 [tool.black]
 line-length = 88
@@ -21,11 +30,3 @@ disallow_untyped_definitions = true
 check_untyped_defs = true
 warn_return_any = true
 ignore_missing_imports = true
-
-
-[tool.poetry.group.dev.dependencies]
-black = "^23.1.0"
-flake8 = "^4.0.0"
-mypy = "^1.4.0"
-python = ">=3.6"
-
