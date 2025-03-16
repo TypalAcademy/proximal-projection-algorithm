@@ -27,18 +27,19 @@ jobs:
         pip install "black[jupyter]"
         pip install poetry
         poetry install
+
+    # Run Pylint for static code analysis
+    - name: Run Pylint
+      run: poetry run pylint ./src/
         
     # Run Black to check code formatting
     - name: Run Black
-      run: |
-        poetry run black --check ./src/  # Check for formatting issues
+      run: poetry run black --check ./src/
 
-    # Run MyPy to check types
+    # Run MyPy to check type annotation
     - name: Run MyPy
-      run: |
-        poetry run mypy ./src/  # Check type annotations
+      run: poetry run mypy ./src/
 
     # Run Flake8 to check code style
     - name: Run Flake8
-      run: |
-        poetry run flake8 ./src/  --verbose # Lint the code
+      run: poetry run flake8 ./src/  --verbose
