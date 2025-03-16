@@ -11,6 +11,15 @@ description: Documentation for code used in the paper for the Proximal Projectio
 
 This website provides documentation for code used in the paper for the Proximal Projection (PP) algorithm.
 
+<center>
+  
+  [arXiv Prerint :simple-arxiv:](https://arxiv.org/abs/2407.16998){ .md-button  }
+  [Github Repo :simple-github:](https://github.com/TypalAcademy/proximal-projection-algorithm){ .md-button  }
+
+</center>
+
+<br>
+
 !!! abstract "Abstract"
   
     Many applications using large datasets require efficient methods for minimizing a proximable convex function subject to satisfying a set of linear constraints within a specified tolerance. For this task, we present a proximal projection (PP) algorithm, which is an instance of Douglas-Rachford splitting that directly uses projections onto the set of constraints. Formal guarantees are presented to prove convergence of PP estimates to optimizers. Unlike many methods that obtain feasibility asymptotically, each PP iterate is feasible. Numerically, we show PP either matches or outperforms alternatives (e.g. linearized Bregman, primal dual hybrid gradient, proximal augmented Lagrangian, proximal gradient) on problems in basis pursuit, stable matrix completion, stable principal component pursuit, and the computation of earth mover's distances.
@@ -32,7 +41,7 @@ The key conditions used in this work are as follows.
   - [x] either the matrix $\mathsf{A}$ has full row-rank or $\mathsf{\varepsilon > 0}$;
   - [x] there is $\mathsf{y \in \mathbb{R}^n}$ such that, if $\mathsf{\varepsilon = 0}$, then $\mathsf{Ay = b}$ and, if $\mathsf{\varepsilon > 0}$, then  $\mathsf{\|Ay-b\| < \varepsilon}$; 
   - [x] the above condition holds for $\mathsf{y \in \mbox{ri}(\mbox{dom}(f))}$.    
-  - [x] either $f$ is coercive or $\mathcal{C}$ is bounded; 
+  - [x] either $\mathsf{f}$ is coercive or $\mathcal{C}$ is bounded; 
 
 
 __Proposition__: If the conditions above hold, then projection onto $\mathcal{C}$ is given by
@@ -75,11 +84,7 @@ _Proximal Projection Method for Stable Linearly Constrained Optimization_
 <br>
 
 <center>
-  
-  [arXiv Prerint :simple-arxiv:](https://arxiv.org/abs/2407.16998){ .md-button  }
-  [Github Repo :simple-github:](https://github.com/TypalAcademy/proximal-projection-algorithm){ .md-button  }
   [Contact Us :material-chat-processing:](https://form.jotform.com/TypalAcademy/contact-form){ .md-button }
-   
 </center>
 
 <br>
