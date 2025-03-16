@@ -3,7 +3,7 @@ Numerical examples for the paper "Proximal Projection Method for Stable Linearly
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 ![Python Linting Badge](https://github.com/typalacademy/proximal-projection-algorithm/actions/workflows/python-linting.yml/badge.svg)
-![Documentation Badge](https://github.com/typalacademy/proximal-projection-algorithm/actions/workflows/docs.yml/badge.svg)
+![Docs Website Badge](https://github.com/typalacademy/proximal-projection-algorithm/actions/workflows/docs-website.yml/badge.svg)
 
 # Proximal Projection Algorithm
 
