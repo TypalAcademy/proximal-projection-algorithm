@@ -17,7 +17,7 @@ This website provides documentation for code used in the paper for the Proximal 
 
 ## Key Result
 
-__Problem__: For a convex function $f\colon\mathbb{R}^n \rightarrow \overline{\mathbb{R}}$, a matrix $A \in \mathbb{R}^{m\times n}$, a vector $b\in \mathbb{R}^m$, and a scalar $\varepsilon \geq 0$, we consider the problem
+__Problem__: For a convex function $\mathsf{f\colon\mathbb{R}^n \rightarrow \overline{\mathbb{R}}}$, a matrix $\mathsf{A \in \mathbb{R}^{m\times n}}$, a vector $\mathsf{b\in \mathbb{R}^m}$, and a scalar $\mathsf{\varepsilon \geq 0}$, we consider the problem
 
 $$
 \mathsf{
@@ -25,25 +25,8 @@ $$
 }
 $$
 
-We refer to this as a _stable linearly constrained optimization problem_ and below set $\mathcal{C} = \{ x : \|Ax-b\|\leq\varepsilon\}$.
-
-__Proposition__: 
-If either the matrix $A$ has full row-rank or $\varepsilon > 0$, and if there is $y \in \mathbb{R}^n$ such that, if $\varepsilon = 0$, then $Ay = b$ and, if $\varepsilon > 0$, then  $\|Ay-b\| < \varepsilon$, then
-$$
-    \sP_{\mathcal{C}}(x) 
-    = \begin{cases}
-    \begin{array}{cl}
-        x & \mathsf{if}\ \|Ax-b\|\leq\varepsilon, \\
-        x - A^\top(AA^\top +\varepsilon\tau_x \II)^{-1}(Ax-b) & \mathsf{otherwise},
-    \end{array}
-    \end{cases}
-$$
-where, if $\|Ax-b\|>\varepsilon$, the scalar $\tau_x$ is the unique positive solution to 
-$$
-  1 = \tau \| (AA^\top +\varepsilon \tau \II)^{-1} (Ax-b) \|.
-$$
-
-__Theorem__: If the following conditions hold:
+We refer to this as a _stable linearly constrained optimization problem_ and below set $\mathsf{\mathcal{C} = \{ x : \|Ax-b\|\leq\varepsilon\}}$.
+The key conditions used in this work are as follows.
 
   - [x] the function $f\colon\mathbb{R}^n\rightarrow \overline{\mathbb{R}}$ is closed, convex, and proper;
   - [x] either the matrix $A$ has full row-rank or $\varepsilon > 0$;
@@ -51,7 +34,23 @@ __Theorem__: If the following conditions hold:
   - [x] the above condition holds for $y \in \mbox{ri}(\mbox{dom}(f))$.    
   - [x] either $f$ is coercive or $\mathcal{C}$ is bounded; 
 
-then PP converges to a solution of the stable linearly constrained optimization problem.
+
+__Proposition__: If the conditions above hold, then projection onto $\mathcal{C}$ is given by
+$$
+    \mathsf{\sP_{\mathcal{C}}(x)}
+    = \begin{cases}
+        \begin{array}{cl}
+            \mathsf{x} & \mathsf{if\ \|Ax-b\|\leq\varepsilon,} \\
+            \mathsf{x - A^\top(AA^\top +\varepsilon\tau_x \II)^{-1}(Ax-b)} & \mathsf{otherwise},
+        \end{array}
+    \end{cases}
+$$
+where, if $\mathsf{\|Ax-b\|>\varepsilon}$, the scalar $\mathsf{\tau_x}$ is the unique positive solution to 
+$$
+  \mathsf{1 = \tau \| (AA^\top +\varepsilon \tau \II)^{-1} (Ax-b) \|.}
+$$
+
+__Theorem__: If the listed conditions hold, then PP converges to a solution of the stable linearly constrained optimization problem.
 
 ## Publication Reference
 
