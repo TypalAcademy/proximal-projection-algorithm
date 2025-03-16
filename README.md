@@ -3,7 +3,7 @@
 ![Docs Website Badge](https://github.com/typalacademy/proximal-projection-algorithm/actions/workflows/docs-website.yml/badge.svg)
 
 # Proximal Projection Algorithm
-Numerical examples for the paper [_Proximal Projection Method for Stable Linearly Constrained Optimization_](https://arxiv.org/abs/2407.16998) by [Howard Heaton](https://www.linkedin.com/in/howard-heaton/).
+Code for the paper [_Proximal Projection Method for Stable Linearly Constrained Optimization_](https://arxiv.org/abs/2407.16998) by [Howard Heaton](https://www.linkedin.com/in/howard-heaton/).
 
 ## Abstract
 
