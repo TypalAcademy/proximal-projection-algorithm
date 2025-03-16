@@ -55,7 +55,9 @@ $$
 
 We can use the above projection formula with Douglas-Rachford Splitting (DRS) to obtain the PP algorithm.
 
-![PP Algorithm](assets/pp-algorithm.png)
+<center>
+    <img src="assets/pp-algorithm.png" alt="Proximal Projection Algorithm" width="400" />
+</center>
 
 __Theorem__: If the listed conditions hold, then PP converges to a solution of the stable linearly constrained optimization problem.
 
