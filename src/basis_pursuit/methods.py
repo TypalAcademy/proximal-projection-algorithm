@@ -1,4 +1,4 @@
-"""Define basic operations used by all methods"""
+"""Implement each method for benchmarking"""
 import time
 
 import numpy as np

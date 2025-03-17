@@ -15,10 +15,10 @@ $$
     \mathsf{ \underset{x}{min} \ \|x\|_1 \quad s.t. \quad Ax=b. }
 $$
 
+Each algorithm is presented in this context below.
+
 
 ## Proximal Projection
-
-In this context, the scheme is as follows
 
 $$
   \begin{align}
@@ -27,10 +27,27 @@ $$
   \end{align}
 $$
 
-It is implemented in the function below.
-
-::: src.basis_pursuit.utils.proximal_projection
+::: src.basis_pursuit.methods.proximal_projection
     options:
       show_root_heading: false
 
 
+## Linearized Bregman
+
+::: src.basis_pursuit.methods.linearized_bregman
+    options:
+      show_root_heading: false
+
+
+## Linearized Method of Multipliers
+
+::: src.basis_pursuit.methods.linearized_method_multipliers
+    options:
+      show_root_heading: false
+
+
+## Primal Dual Hybrid Gradient
+
+::: src.basis_pursuit.methods.prial_dual_hybrid_gradient
+    options:
+      show_root_heading: false

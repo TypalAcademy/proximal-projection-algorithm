@@ -82,8 +82,7 @@ extra_javascript:
 nav:
     - 'Home': index.md
     - 'Numerical Examples':
-        - 'Test Page': basis_pursuit.md
-        - 'Basis Pursuit': notebooks/basis_pursuit.ipynb
+        - 'Basis Pursuit': basis_pursuit.md
         - 'Principal Component Pursuit': notebooks/stable_principal_component_pursuit.ipynb    
         - 'Earth Movers Distance': notebooks/earth_movers_distance.ipynb
         - 'Matrix Completion': notebooks/stable_matrix_completion.ipynb
@@ -93,5 +92,3 @@ copyright: |
   &copy; 2024 <a href="https://typal.academy"  target="_blank" rel="noopener">Typal Academy.</a> 
   All Rights Reserved.
   <br> 
-  <a href="https://typal.academy/terms-of-service">Terms of Service </a> &nbsp; &nbsp;
-  <a href="https://typal.academy/privacy">Privacy Policy</a>
