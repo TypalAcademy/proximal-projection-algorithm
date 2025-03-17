@@ -1,5 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
-![Python Linting Badge](https://github.com/typalacademy/proximal-projection-algorithm/actions/workflows/python-linting.yml/badge.svg)
+[![Python Linting Badge](https://github.com/typalacademy/proximal-projection-algorithm/actions/workflows/python-linting.yml/badge.svg)](https://github.com/TypalAcademy/proximal-projection-algorithm/blob/main/.github/workflows/python-linting.yml)
 [![Docs Website Badge](https://github.com/typalacademy/proximal-projection-algorithm/actions/workflows/docs-website.yml/badge.svg)](https://pp.research.typal.academy)
 
 # Proximal Projection Algorithm
