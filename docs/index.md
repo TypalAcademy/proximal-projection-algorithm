@@ -60,11 +60,21 @@ $$
   \mathsf{1 = \tau \| (AA^\top +\varepsilon \tau I)^{-1} (Ax-b) \|.}
 $$
 
-We can use the above projection formula with Douglas-Rachford Splitting (DRS) to obtain the PP algorithm.
+We can use the above projection formula with Douglas-Rachford Splitting (DRS) to obtain the PP algorithm below. The output $x$ is an estimate of the minimizer to our problem.
 
-<center>
-    <img src="assets/pp-algorithm.png" alt="Proximal Projection Algorithm" width="600" />
-</center>
+$$
+  \begin{align}
+    & \mathsf{while\ \ stopping\ \  criteria\ \ not\ \ met} \\
+    & \quad\quad \mathsf{if \ \|Az-b\|\leq \varepsilon} \\
+    & \quad\quad\quad\quad \mathsf{x \leftarrow z} \\
+    & \quad\quad \mathsf{else} \\
+    & \quad\quad\quad\quad \mathsf{\tau \leftarrow solution\big( 1 = \tau \|AA^\top + \varepsilon I)^{-1}(Az-b)} \\
+    & \quad\quad\quad\quad \mathsf{x \leftarrow z - A^\top (AA^\top+\varepsilon I)^{-1}(Az-b) } \\
+    & \quad\quad \mathsf{z \leftarrow z + prox_{\alpha f}(2x - z) - x}\\
+    & {\mathsf return\ \ x}
+  \end{align}
+$$
+
 
 __Theorem__: If the listed conditions hold, then PP converges to a solution of the stable linearly constrained optimization problem.
 

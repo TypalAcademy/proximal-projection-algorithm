@@ -34,12 +34,16 @@ poetry install
 
 ### Experiments
 
+To run each experiment, execute the following.
+
 ```
 poetry run experiment_basis_pursuit
 poetry run experiment_principal_component_pursuit
 poetry run experiment_earth_mover_distance
 poetry run experiment_matrix_completion
 ```
+
+See the [documentation website](https://pp.research.typal.academy) for more code details.
 
 <br>
 
@@ -52,5 +56,3 @@ poetry run experiment_matrix_completion
              journal={{arXiv preprint}},
              year={2024}
     }
-
-See the [documentation website](https://pp.research.typal.academy) for more details about code.
