@@ -14,7 +14,8 @@ def shrink(xi: NDArray[np.float64], alpha: float) -> NDArray[np.float64]:
 
 
 def proximal_projection(A, b, alpha=1.0e-1, num_iters=2000):
-    """Execute proximal projection algorithm"""
+    """Proximal projection algorithm
+    """
     start = time.time()
     z = np.zeros((A.shape[1], 1))
     x = np.zeros((A.shape[1], 1))
@@ -30,15 +31,7 @@ def proximal_projection(A, b, alpha=1.0e-1, num_iters=2000):
 
 
 def linearized_bregman(A, b, mu=2.0, num_iters=2000):
-    """Execute linearized bregman algorithm
-
-    Note: This solves the problem
-           min  mu * ||x||_1 + ||x||_2^2 / 2 * alpha,
-            x
-
-          subject to the linear constraint A @ x = b.
-          So, mu must be chosen "large enough" to ensure
-          the minimizer of the L1 norm is obtained.
+    """Linearized bregman algorithm
     """
     x = np.zeros((A.shape[1], 1))
     v = np.zeros((A.shape[1], 1))

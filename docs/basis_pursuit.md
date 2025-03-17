@@ -19,7 +19,7 @@ $$
     options:
       show_root_heading: false
 
-Each benchmarked algorithm for solving the above problem is listed below.
+The update iteration benchmarked algorithm for solving the above problem is listed below and is followed by the function implementing it.
 
 
 ## Proximal Projection
@@ -37,6 +37,17 @@ $$
 
 
 ## Linearized Bregman
+
+INSERT UPDATES.
+
+Note: 
+    This method solves the problem
+    
+    $$
+    \mathsf{ \underset{x}{min}\ |x|_1 + \alpha \frac{|x|_2^2}{2} \quad s.t. \quad Ax=b.}
+    $$
+
+    Consequently, the parameter $\mu$ must be chosen "large enough" to ensure the minimizer of the $\mathsf{\ell_1}$ norm is obtained.
 
 ::: src.basis_pursuit.methods.linearized_bregman
     options:
