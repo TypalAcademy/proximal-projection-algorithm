@@ -47,3 +47,5 @@ The matrix $\mathsf{A \in \mathbb{R}^{m\times n}}$ i.i.d. Gaussian entries, with
 ::: src.basis_pursuit.basis_pursuit_experiment.run_basis_pursuit_experiment
     options:
       show_root_heading: false
+
+<br>
