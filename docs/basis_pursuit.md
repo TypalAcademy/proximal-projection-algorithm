@@ -19,6 +19,7 @@ $$
 ## Proximal Projection
 
 In this context, the scheme is as follows
+
 $$
   \begin{align}
     & \mathsf{while\ \ stopping\ \  criteria\ \ not\ \ met} \\
