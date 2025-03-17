@@ -16,8 +16,6 @@ $$
     options:
       show_root_heading: false
 
-<br>
-
 The update iteration for each benchmarked algorithm is in Appendix B.1 of the [paper](https://arxiv.org/abs/2407.16998). Code implementations are shown below.
 
 <br>
