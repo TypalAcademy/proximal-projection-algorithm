@@ -9,6 +9,8 @@ Code for the paper [_Proximal Projection Method for Stable Linearly Constrained 
 
 Many applications using large datasets require efficient methods for minimizing a proximable convex function subject to satisfying a set of linear constraints within a specified tolerance. For this task, we present a proximal projection (PP) algorithm, which is an instance of Douglas-Rachford splitting that directly uses projections onto the set of constraints. Formal guarantees are presented to prove convergence of PP estimates to optimizers. Unlike many methods that obtain feasibility asymptotically, each PP iterate is feasible. Numerically, we show PP either matches or outperforms alternatives (e.g. linearized Bregman, primal dual hybrid gradient, proximal augmented Lagrangian, proximal gradient) on problems in basis pursuit, stable matrix completion, stable principal component pursuit, and the computation of earth mover’s distances.
 
+<br>
+
 ## Running the Experiments
 
 ### Setup
@@ -38,6 +40,8 @@ poetry run experiment_principal_component_pursuit
 poetry run experiment_earth_mover_distance
 poetry run experiment_matrix_completion
 ```
+
+<br>
 
 
 ## Citation
