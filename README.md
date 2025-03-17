@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 ![Python Linting Badge](https://github.com/typalacademy/proximal-projection-algorithm/actions/workflows/python-linting.yml/badge.svg)
-![Docs Website Badge](https://github.com/typalacademy/proximal-projection-algorithm/actions/workflows/docs-website.yml/badge.svg)
+[![Docs Website Badge](https://github.com/typalacademy/proximal-projection-algorithm/actions/workflows/docs-website.yml/badge.svg)](https://pp.research.typal.academy)
 
 # Proximal Projection Algorithm
 Code for the paper [_Proximal Projection Method for Stable Linearly Constrained Optimization_](https://arxiv.org/abs/2407.16998) by [Howard Heaton](https://www.linkedin.com/in/howard-heaton/).
@@ -27,7 +27,10 @@ For more installation options, see the [Poetry documentation](https://python-poe
 ### Experiments
 
 ```
-poetry run basis_pursuit_experiment
+poetry run experiment_basis_pursuit
+poetry run experiment_principal_component_pursuit
+poetry run experiment_earth_mover_distance
+poetry run experiment_matrix_completion
 ```
 
 
