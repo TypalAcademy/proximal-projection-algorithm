@@ -1,5 +1,5 @@
 site_name: Proximal Projection for Stable Linearly Constrained Optimization
-site_description: Documentation for code used in the paper for the Proximal Projection (PP) algorithm.
+site_description: Documentation for code used in the paper for the Proximal Projection algorithm.
 
 extra_css:
   - stylesheets/extra.css
@@ -35,8 +35,8 @@ theme:
     - navigation.footer  
 
 # Github Repo
-repo_name: proximal-projection-algorithm
-repo_url: https://github.com/typalacademy/proximal-projection-algorithm
+repo_name: proximal-projection
+repo_url: https://github.com/typalacademy/proximal-projection
 
 extra:
   homepage: https://typal.academy

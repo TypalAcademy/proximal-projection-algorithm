@@ -1,7 +1,4 @@
 ---
-hide:
-  - navigation
-  - toc
 title: Home
 description: Documentation for code used in the paper for the Proximal Projection (PP) algorithm.
 
