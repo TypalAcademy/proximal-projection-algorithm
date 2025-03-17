@@ -60,7 +60,7 @@ $$
   \mathsf{1 = \tau \| (AA^\top +\varepsilon \tau I)^{-1} (Ax-b) \|.}
 $$
 
-We can use the above projection formula with Douglas-Rachford Splitting (DRS) to obtain the PP algorithm below. The output $x$ is an estimate of the minimizer to our problem.
+Using this projection with Douglas-Rachford Splitting (DRS) yields the PP algorithm below. The output $\mathsf{x}$ estimates a minimizer to our problem.
 
 $$
   \begin{align}
