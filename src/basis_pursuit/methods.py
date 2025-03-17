@@ -65,7 +65,7 @@ def linearized_method_multipliers(A, b, lambd=100.0, num_iters=2000):
     return x, stats, execution_time
 
 
-def prial_dual_hybrid_gradient(A, b, lambd=100.0, num_iters=2000):
+def primal_dual_hybrid_gradient(A, b, lambd=100.0, num_iters=2000):
     """Primal Dual Hybrid Gradient"""
     stats = Stats(matrix=A, measurements=b)
     rows, cols = A.shape
