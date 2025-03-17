@@ -8,7 +8,7 @@ from src.basis_pursuit.stats import Stats
 
 
 def shrink(xi: NDArray[np.float64], alpha: float) -> NDArray[np.float64]:
-    """Execute element-wise soft-threshold"""
+    """The proximal for $|x|_1$ is an element-wise shrink operation."""
     output: NDArray[np.float64] = np.sign(xi) * np.maximum(np.abs(xi) - alpha, 0)
     return output
 

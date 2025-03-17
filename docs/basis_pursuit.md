@@ -12,10 +12,14 @@ description: Documentation for code used in the paper for the Proximal Projectio
 This page shows the numerical example for solving the problem
 
 $$
-    \mathsf{ \underset{x}{min} \ \|x\|_1 \quad s.t. \quad Ax=b. }
+    \mathsf{ \underset{x}{min} \ |x|_1 \quad s.t. \quad Ax=b. }
 $$
 
-Each algorithm is presented in this context below.
+::: src.basis_pursuit.methods.shrink
+    options:
+      show_root_heading: false
+
+Each benchmarked algorithm for solving the above problem is listed below.
 
 
 ## Proximal Projection
