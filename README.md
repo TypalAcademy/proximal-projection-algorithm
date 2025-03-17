@@ -14,11 +14,8 @@ Many applications using large datasets require efficient methods for minimizing 
 ### Setup
 ```
 brew install poetry
-
 git clone https://github.com/typalacademy/proximal-projection-algorithm.git
-
 cd proximal-projection-algorithm
-
 poetry install
 ```
 
