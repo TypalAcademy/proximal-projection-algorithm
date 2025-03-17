@@ -16,6 +16,7 @@ Many applications using large datasets require efficient methods for minimizing 
 brew install poetry
 
 git clone https://github.com/typalacademy/proximal-projection-algorithm.git
+
 cd proximal-projection-algorithm
 
 poetry install
@@ -25,7 +26,9 @@ For more installation options, see the [Poetry documentation](https://python-poe
 
 ### Experiments
 
-TBD.
+```
+poetry run basis_pursuit_experiment
+```
 
 
 ## Citation
