@@ -14,7 +14,7 @@ Many applications using large datasets require efficient methods for minimizing 
 ## Running the Experiments
 
 ### Setup
-On Mac, with homebrew one can run[^poetryInstall]
+On a Mac with homebrew installed, one can run the following to install poetry.[^poetryInstall]
 ```
 brew install poetry
 ```

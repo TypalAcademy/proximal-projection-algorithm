@@ -71,16 +71,14 @@ $$
     & \quad\quad\quad\quad \mathsf{\tau \leftarrow solution\big( 1 = \tau \|AA^\top + \varepsilon I)^{-1}(Az-b)} \\
     & \quad\quad\quad\quad \mathsf{x \leftarrow z - A^\top (AA^\top+\varepsilon I)^{-1}(Az-b) } \\
     & \quad\quad \mathsf{z \leftarrow z + prox_{\alpha f}(2x - z) - x}\\
-    & {\mathsf return\ \ x}
+    & \mathsf{return\ \ x}
   \end{align}
 $$
 
 
 __Theorem__: If the listed conditions hold, then PP converges to a solution of the stable linearly constrained optimization problem.
 
-## Publication Reference
-
-_Proximal Projection Method for Stable Linearly Constrained Optimization_
+## Citation
     
     @article{heaton2024proximal,
              title={{Proximal Projection Method for Stable Linearly Constrained Optimization}},
