@@ -5,7 +5,7 @@ description: Documentation for code used in the paper Proximal Projection Method
 
 # Proximal Projection Algorithm
 
-This website provides documentation for code used in the paper _Proximal Projection Method for Stable Linearly Constrained Optimization_.
+This website documents code used in the paper _Proximal Projection Method for Stable Linearly Constrained Optimization_.
 
 <center>
   
