@@ -14,7 +14,7 @@ def shrink(xi: NDArray[np.float64], alpha: float) -> NDArray[np.float64]:
 
 
 def proximal_projection(A, b, alpha=1.0e-1, num_iters=2000):
-    """Proximal projection"""
+    """Proximal Projection"""
     start = time.time()
     z = np.zeros((A.shape[1], 1))
     x = np.zeros((A.shape[1], 1))
@@ -30,7 +30,7 @@ def proximal_projection(A, b, alpha=1.0e-1, num_iters=2000):
 
 
 def linearized_bregman(A, b, mu=2.0, num_iters=2000):
-    """Linearized bregman"""
+    """Linearized Bregman"""
     x = np.zeros((A.shape[1], 1))
     v = np.zeros((A.shape[1], 1))
     stats = Stats(matrix=A, measurements=b)
@@ -48,7 +48,7 @@ def linearized_bregman(A, b, mu=2.0, num_iters=2000):
 
 
 def linearized_method_multipliers(A, b, lambd=100.0, num_iters=2000):
-    """Linearized method of multipliers"""
+    """Linearized Method of Multipliers"""
     rows, cols = A.shape
     x = np.zeros((cols.shape[1], 1))
     v = np.zeros((rows.shape[0], 1))
@@ -66,7 +66,7 @@ def linearized_method_multipliers(A, b, lambd=100.0, num_iters=2000):
 
 
 def prial_dual_hybrid_gradient(A, b, lambd=100.0, num_iters=2000):
-    """Primal dual hybrid gradient"""
+    """Primal Dual Hybrid Gradient"""
     stats = Stats(matrix=A, measurements=b)
     rows, cols = A.shape
     x = np.zeros((cols.shape[1], 1))
