@@ -1,15 +1,11 @@
 ---
-hide:
-  - navigation
-  - toc
 title: Home
-description: Documentation for code used in the paper for the Proximal Projection (PP) algorithm.
-
+description: Documentation for code used in the paper Proximal Projection Method for Stable Linearly Constrained Optimization.
 ---
 
 # Proximal Projection Algorithm
 
-This website provides documentation for code used in the paper for the Proximal Projection (PP) algorithm.
+This website provides documentation for code used in the paper _Proximal Projection Method for Stable Linearly Constrained Optimization_.
 
 <center>
   
