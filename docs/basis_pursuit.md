@@ -15,10 +15,10 @@ $$
     \mathsf{ \underset{x}{min} \ \|x\|_1 \quad s.t. \quad Ax=b. }
 $$
 
-::: src.basis_pursuit.utils.proximal_projection
-    options:
-      show_root_heading: false
 
+## Proximal Projection
+
+In this context, the scheme is as follows
 $$
   \begin{align}
     & \mathsf{while\ \ stopping\ \  criteria\ \ not\ \ met} \\
@@ -27,6 +27,15 @@ $$
     & \quad\quad \mathsf{else} \\
     & \quad\quad\quad\quad \mathsf{\tau \leftarrow solution\big( 1 = \tau \|AA^\top + \varepsilon I)^{-1}(Az-b)} \\
     & \quad\quad\quad\quad \mathsf{x \leftarrow z - A^\top (AA^\top+\varepsilon I)^{-1}(Az-b) } \\
-    & \quad\quad \mathsf{z \leftarrow z + prox_{\alpha f}(2x - z) - x}
+    & \quad\quad \mathsf{z \leftarrow z + prox_{\alpha f}(2x - z) - x}\\
+    & {\mathsf return\ \ x}
   \end{align}
 $$
+
+It is implemented in the function below.
+
+::: src.basis_pursuit.utils.proximal_projection
+    options:
+      show_root_heading: false
+
+
