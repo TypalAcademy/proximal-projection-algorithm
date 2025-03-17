@@ -12,14 +12,23 @@ Many applications using large datasets require efficient methods for minimizing 
 ## Running the Experiments
 
 ### Setup
+On Mac, with homebrew one can run[^poetryInstall]
 ```
 brew install poetry
+```
+Next clone the repository and go to the directory containing this repository's code.
+```
 git clone https://github.com/typalacademy/proximal-projection-algorithm.git
 cd proximal-projection-algorithm
+```
+Lastly, create and activate a virtual environment for the project.
+```
 poetry install
 ```
 
-For more installation options, see the [Poetry documentation](https://python-poetry.org/docs/).
+[^poetryInstall]: For more installation options, see the [Poetry documentation](https://python-poetry.org/docs/).
+
+
 
 ### Experiments
 
