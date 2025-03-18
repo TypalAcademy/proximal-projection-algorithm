@@ -11,7 +11,7 @@ Many applications using large datasets require efficient methods for minimizing 
 
 <br>
 
-## Running the Experiments
+## Usage Overview
 
 ### Setup
 On a Mac with homebrew installed, one can run the following to install poetry.[^poetryInstall]
@@ -29,8 +29,6 @@ poetry install
 ```
 
 [^poetryInstall]: For more installation options, see the [Poetry documentation](https://python-poetry.org/docs/).
-
-
 
 ### Experiments
 
